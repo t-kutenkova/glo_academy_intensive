@@ -19,13 +19,37 @@ font-weight: normal;
 font-style: normal;
 }
 
+/*
+Different browsers set different default CSS rules
+So called "user agent stylesheet"
+I always reset/normalise my CSS before every project
+*/
+
+
+/* 
+Звездочка выбирает все элементы DOM дерева
+Псевдоэлементы :: позволяют изменять часть элемента
+
+Например, вот так можно добавить стрелки после ссылок
+a::after {
+  content: "→";
+}
+Получается, мы для всех вообще элементов устанавливаем свойство box-sizing
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+
 body {
   background-color: #292929;
   color: #ffffff;
   font-family: 'Gotham Pro', sans-serif;
   font-size: 12px;
+  margin: 0;
 }
 
+/* .header */
 .header {
   padding-top: 50px;
 }
@@ -65,3 +89,61 @@ body {
   margin-top: 16px;
   font-size: 16px;
 }
+/* ./header */
+
+
+/* .hero */
+.hero {
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #4c4c4c;
+}
+
+.hero-title {
+  font-size: 34px;
+  margin-bottom: 34px;
+  letter-spacing: 0.5px;
+  font-family: 'Gotham Pro Medium';
+  text-transform: uppercase;
+}
+
+.hero-description {
+  font-size: 18px;
+  font-family: 'Gotham Pro Light';
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.flowers-slider {
+  width: 100%;
+  margin-top: 87px;
+  margin-bottom: 83px;
+}
+
+:root {
+    --swiper-navigation-size: 18px;
+}
+
+.hero-cta {
+  display: block;
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-family: 'Gotham Pro Light';
+}
+
+.button {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff2e55;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  padding-right: 65px;
+  padding-left: 65px;
+  margin-top: 36px;
+}
+/* ./hero */

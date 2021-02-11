@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flowers - интернет магазин цветов</title>
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
   <header class="header">
     <div class="container">
       <div class="row">
@@ -42,5 +44,42 @@
     </div>
     <!-- /.container -->
   </header>
+
+  <section class="hero">
+
+    <div class="container">
+
+      <h1 class="hero-title">Эксклюзивные цветы и букеты<br> Flowers Shop</h1>
+      <p class="hero-description">первая в Росии эксклюзивная доставка цветов для людей, которые ценят <b>уникальность</b></p>
+
+      <!-- Слайдер с цветами -->
+      <div class="swiper-container flowers-slider">
+        <!-- Обертка слайдера -->
+        <div class="swiper-wrapper">
+          <!-- Слайды -->
+          <div class="swiper-slide"><img src="img/slider/flower-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/slider/flower-2.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/slider/flower-3.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/slider/flower-4.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/slider/flower-5.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/slider/flower-6.png" alt=""></div>
+        </div>
+        <!-- Кнопки слайдера -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <!-- ./swiper-container -->
+
+      <span class="hero-cta">Закажите эксклюзивный букет со скидкой 10%</span>
+
+      <a href="/" class="button">Заказать букет</a>
+
+    </div>
+    <!-- ./container -->
+  </section>
+  <!-- ./hero -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
