@@ -147,3 +147,92 @@ body {
   margin-top: 36px;
 }
 /* ./hero */
+
+
+/* .feedback */
+.feedback {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #4c4c4c
+}
+
+.feedback-title {
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Gotham Pro Medium';
+  margin-bottom: 96px;
+}
+
+.feedback-slider {
+  width: 100%;
+  margin-top: 96px;
+}
+
+.feedback-slide {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* Псевдоэлемент для затемнения фона */
+.feedback-image:before {
+  content: '';
+  /* 100% от родительского блока */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+/* Чтобы подложка не смещала текст */
+  position: absolute;
+}
+
+.feedback-image > * {
+  /* 
+  Чтобы подложка не смещала текст
+  Все, что есть в этом блоке 
+  */
+  position: relative;
+}
+
+.feedback-image {
+  width: 220px;
+  height: 220px;
+  /* Чтобы картинка не скукоживалась */
+  flex-shrink: 0;
+  border-radius: 50%;
+  /* Скрываем все, что за пределами углов*/
+  overflow: hidden;
+  font-size: 20px;
+  font-family: 'Gotham Pro Light';
+  /* 
+  Чтобы подложка не смещала текст
+  position: absolute; top: 40px; left: 40px; относительно угла окна
+  position: relative; top: 40px; left: 40px; относительно предыдущего блока
+  position: -webkit-sticky; position: sticky; top: 20px; залипает после движения на 20px сверху
+  */
+  position: relative;
+  /* Отодвигаем текст отзыва */
+  margin-right: 50px;
+}
+
+.feedback-image-1 {
+  background-image: url('../img/flowers-back.jpg');
+}
+
+.feedback-name {
+  margin-bottom: 7px;
+}
+
+.feedback-text {
+  font-size: 18px;
+  letter-spacing: 0.18;
+  line-height: 1.4;
+}
+
+.feedback-link {
+  color: #f24841;
+}
+
+.feedback-points {
+  margin-top: 98px;
+}
