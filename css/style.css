@@ -343,3 +343,70 @@ body {
   width: 100%;
   padding: 16px 10px 13px 10px;
 }
+
+.goods-more {
+  margin-top: 39px;
+  text-align: center;
+  font-size: 14px;
+  color: #f24841;
+  display: block;
+}
+
+/* Стрелочка сбоку от ссылки*/
+.goods-more::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(/img/red_arrow.png) no-repeat center;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+/* .goods */
+
+
+/* .offer */
+.offer {
+  text-align: center;
+  padding-top: 102px;
+  padding-bottom: 84px;
+  background-color: black;
+}
+
+.offer-link {
+  color: white;
+}
+
+.offer-text {
+  margin-top: 53px;
+  font-size: 14px;
+}
+
+.offer-number {
+  margin-top: 22px;
+  font-size: 36px;
+  text-decoration: none;
+  color: white;
+}
+/* .offer */
+
+
+/* footer */
+.footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-menu-item {
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+}
+
+
+.footer-social {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+/* footer */
