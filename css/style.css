@@ -78,11 +78,14 @@ body {
   letter-spacing: 0.12px;
 }
 
+.header-call {
+  text-align: right;
+}
+
 .header-phone {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
-  text-align: right;
   font-weight: 500;
   display: block;
 }
@@ -92,13 +95,11 @@ body {
   font-weight: 400;
   /* отступ от предыдущего блока сверху */
   margin-top: 7px;
-  text-align: right;
   display: block;
 }
 
 .header-callback {
   color: #ff3469;
-  text-align: right;
   display: block;
   margin-top: 16px;
   font-size: 16px;
@@ -116,10 +117,13 @@ body {
 
 .hero-title {
   font-size: 34px;
+  margin: auto;
   margin-bottom: 34px;
   letter-spacing: 0.5px;
   font-family: 'Gotham Pro Medium';
   text-transform: uppercase;
+  max-width: 650px;
+
 }
 
 .hero-description {
@@ -127,6 +131,8 @@ body {
   font-family: 'Gotham Pro Light';
   text-transform: uppercase;
   line-height: 1.4;
+  max-width: 590px;
+  margin: auto;
 }
 
 .flowers-slider {
@@ -255,6 +261,7 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  display: inline-block;
   line-height: 1.25;
   max-width: 270px;
 }
@@ -396,17 +403,64 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .footer-menu-item {
   text-transform: uppercase;
   color: white;
   font-size: 18px;
+  padding-right: 30px;
 }
-
-
 .footer-social {
   margin-top: 30px;
   font-size: 16px;
 }
-
+.footer-social-logo {
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.footer-support {
+  text-align: right;
+}
+.footer-support-text {
+  font-size: 14px;
+  display: block;
+}
+.footer-support-number {
+  font-size: 24px;
+  font-family: 'Gotham Pro Medium';
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 13px;
+  margin-bottom: 12px;
+}
 /* footer */
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .header-call {
+    text-align: center;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .goods-card-color-wrapper {
+    max-width: 100px;
+    margin: auto;
+  }
+}
