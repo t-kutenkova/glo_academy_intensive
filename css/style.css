@@ -463,4 +463,11 @@ body {
     max-width: 100px;
     margin: auto;
   }
+  .goods-card-label {
+    margin: 15px auto;
+    display: block;
+  }
+  .footer-support {
+    text-align: left;
+  }
 }
